@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu li {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  display: grid;
+  align-content: center;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(17, 34, 102, 0.2);
+}
+
+#html {
+  margin-top: 20px;
+}
+
+#card {
+  border: none;
+  height: 20px;
+  width: 50px;
+  border-radius: 5px;
+  background: rgba(243, 243, 150, 0.6);
+  transition: width 0.4s, height 0.4s;
+}
+
+#languge {
+  bottom: 0px;
+}
+
+#menu li:hover {
+  cursor: pointer;
+}
+
+#card:hover {
+  height: 40px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#product-asli img {
+  width: 200px;
+  height: 100px;
+}
+
+#product {
+  border: 2px solid red;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+#add-card {
+  margin-bottom: 10px;
+  border: none;
+  background: rgba(72, 239, 114, 0.3333333333);
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#product-asli {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@keyframes card {
+  0% {
+    background: green;
+  }
+  100% {
+    background: rgba(72, 239, 114, 0.3333333333);
+  }
+}
+#m {
+  width: 100%;
+  height: 90px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#img5 {
+  width: 80px;
+  height: 90px;
+}
+
+/*# sourceMappingURL=style.css.map */
