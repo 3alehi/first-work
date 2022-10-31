@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #000000;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  box-shadow: 0 8px 5px rgb(227, 118, 15), 8px 9px 2pc red;
+  background: #04d0d7;
+  border-radius: 20px;
+  border: 0.1px solid #010eff;
+}
+
+#menu li {
+  background: #04d0d7;
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#hi {
+  display: none;
+}
+
+#submenu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  #menu {
+    display: none;
+  }
+  #hi {
+    display: block;
+    background: red;
+    font-size: 20px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .submenu {
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    background: #720101;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .submenu ul {
+    list-style: none;
+  }
+  .submenu li {
+    cursor: pointer;
+    padding: 20px;
+    background: #720101;
+  }
+  #l {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

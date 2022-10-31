@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul id="menu">
+        <li>home</li>
+        <li>contact</li>
+        <li>call</li>
+    </ul>
+    
+    <button id="hi">open</button>
+   
+    <div  id="l">
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li>call</li>
+        </ul>
+    
+</div>
+<h1 style="color: red;">hi</h1>
+<script>
+    let boool = false
+    let u = document.getElementById('l')
+    let i = document.getElementById('hi')
+    i.addEventListener('click' , ()=>{
+    if(u.style.display==="block"){
+        u.style.display="none"
+        u.setAttribute('class',"")
+i.innerHTML="open"  
+  }
+        else{
+            i.innerHTML="close"  
+
+u.style.display="block"
+u.classList.toggle('submenu')
+
+        }
+})
+
+</script>
+</body>
+</html>
